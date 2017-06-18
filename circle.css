@@ -1,0 +1,42 @@
+.circle-wrap {
+    position: relative;
+    margin: 0 40px 40px 0;
+    display: inline-block;
+}
+circle {
+    fill: rgba(0,0,0,0);
+    stroke: #dfdcd5;
+    stroke-width: 20;
+    stroke-dasharray: 314 314px;
+    transition: strpke-dasharray .8s;
+}
+.circle {
+    display: inline-block;
+    size: 120px;
+}
+.circle__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    color: #10c1a8;
+    width: 70px;
+    border-radius: 50%;
+    text-align: center;
+}
+circle:nth-child(2n) {
+    fill: rgba(0,0,0,0);
+    stroke: #10c1a8;
+    stroke-width: 20;
+}
+
+.g-circles {
+    fill: none;
+    stroke-width: 25;
+}
+.sector {
+    stroke-dasharray: 722;
+    stroke-dashoffset: 361;
+    transition: all 1s;
+}

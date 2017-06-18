@@ -6,6 +6,7 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="circle.css">
 </head>
 <body>
   <!--Линия-->
@@ -43,6 +44,36 @@
   <!--Многоугольник-->
   <svg>
     <polygon points="50,5 100,5 125,30 75,80 25, 30" fill="lightblue" />
+  </svg>
+
+  <!--2 круга 80 * 314/100-->
+  <div class="circle-wrap">
+    <svg class="circle" width="120" height="120">
+      <circle transform="rotate(-90)" r="50" cx="-60" cy="60" />
+      <circle transform="rotate(-90)" style="stroke-dasharray:250px 314px;" r="50" cx="-60" cy="60" />
+    </svg>
+    <span class="circle__text">PHP</span>
+  </div>
+  <div class="circle-wrap">
+    <svg class="circle" width="120" height="120">
+      <circle transform="rotate(-90)" r="50" cx="-60" cy="60" />
+      <circle transform="rotate(-90)" style="stroke-dasharray:250px 314px;" r="50" cx="-60" cy="60" />
+    </svg>
+    <span class="circle__text">PHP</span>
+  </div>
+  <div class="circle-wrap">
+    <svg class="circle" width="120" height="120">
+      <circle transform="rotate(-90)" r="50" cx="-60" cy="60" />
+      <circle transform="rotate(-90)" style="stroke-dasharray:78px 314px;" r="50" cx="-60" cy="60" />
+    </svg>
+    <span class="circle__text">PHP</span>
+  </div>
+
+  <svg width="270" height="270" class="g-circles">
+    <circle r="115" cx="135" cy="135" stroke="#ccc"
+            fill="none" />
+    <circle r="115" cx="135" cy="135" stroke="crimson"
+            class="sector" />
   </svg>
 </body>
 </html>
